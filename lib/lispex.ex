@@ -3,16 +3,7 @@ defmodule Lispex do
   Documentation for Lispex.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Lispex.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  @type program :: list(expression())
+  @type expression :: literal | list(expression)
+  @type literal :: integer() | float() | String.t()
 end
